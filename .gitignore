@@ -1,6 +1,8 @@
 task-manager/node_modules/# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+node_modules
+.vscode
 task-manager/node_modules
 task-manager/.pnp
 task-manager/.pnp.js
