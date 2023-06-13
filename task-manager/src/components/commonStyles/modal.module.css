@@ -1,0 +1,142 @@
+.delBtn,
+.editBtn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.addBtn,
+.exportBtn{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+.addBtn[title]:hover::after,
+.exportBtn[title]:hover::after {
+    content: attr(title);
+    padding: 0.25rem;
+    font-size: 0.5rem;
+    text-align:center
+  }
+
+.exportBtn:hover {
+  transform: scale(1.05) rotate(2deg);
+  color: rgba(139, 236, 247, 0.909);
+  box-shadow: rgba(139, 236, 247, 0.832) 0px 14px 28px, rgba(139, 236, 247, 0.832) 0px 10px 10px;
+}
+.addBtn:hover{
+    transform: scale(1.05) rotate(-2deg);
+  color: rgba(56, 233, 129, 0.909);
+  box-shadow: rgba(56, 233, 129, 0.909) 0px 14px 28px, rgba(139, 236, 247, 0.832) 0px 10px 10px;
+}
+.delBtn{
+    color: green;
+}
+
+.editBtn {
+    color: orange;
+}
+.btns{
+    margin-top:1rem;
+}
+.modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+/* The Modal Close Button (x) */
+.close {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.modalContent {
+    position: fixed;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 15px;
+    border-radius: 1rem;
+    padding: 2rem;
+    min-width: 30vw;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    text-align: center;
+}
+
+.container h1,
+.message{
+    color: white;
+}
+
+.container p{
+    font-size:1.5rem;
+    width: 80%;
+}
+
+.container p b{
+    text-transform: uppercase;
+}
+
+.cancelbtn,
+.deletebtn {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.cancelbtn {
+    background-color: green;
+    margin-right: 1rem;
+}
+
+.deletebtn {
+    background-color: red;
+}
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .deletebtn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 2rem;
+}
+.btnsContainer{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.task{
+    border-bottom: 1px solid black;
+}
+td{
+    text-align: center;
+}
+tbody:before {
+    line-height:1rem;
+    content:".";
+    color:white;
+    display:block;
+}

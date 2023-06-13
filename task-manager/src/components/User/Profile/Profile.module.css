@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.icons{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.editBtn i{
+    font-size: 1.5rem;
+    color: black;
+}

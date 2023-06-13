@@ -1,0 +1,70 @@
+.formBox {
+    max-width: 400px;
+    width: 100vw;
+    padding: 40px;
+    background: rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.userBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+.formBox h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.userBox label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.userBox input {
+    width: 100%;
+    padding: 0.75rem 0;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(56, 233, 129, 0.909);
+    outline: none;
+    background: transparent;
+    caret-color: rgba(56, 233, 129, 0.909);
+    text-align: center;
+}
+
+.userBox .formError{
+    color: red;
+    font-size: 1rem;
+}
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.formBox .userBox .show {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    font-size: 1.25rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.formError{
+    color: red;
+    text-align: center;
+    margin: 1rem;
+}
