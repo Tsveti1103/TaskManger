@@ -57,6 +57,7 @@ export const TaskProvider = ({
     isOpen,
     onChange,
     getAllTasks,
+    setTasks,
   }
   return (
     <>

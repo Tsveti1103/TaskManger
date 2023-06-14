@@ -1,3 +1,6 @@
+.description{
+    max-width: 40vw;
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -22,6 +25,11 @@
 }
 td{
     text-align: center;
+    padding:1rem;
+}
+th:not(:last-child){
+    cursor: pointer;
+    padding: 1rem;
 }
 tbody:before {
     line-height:1rem;

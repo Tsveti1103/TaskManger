@@ -25,6 +25,7 @@ function App() {
             </Route>
             <Route element={<RouteGuardIsAuthenticated />}>
               <Route path="/" element={<Tasks />} />
+              <Route path="/*" element={<Tasks />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/logout" element={<Logout />} />
               <Route path="/profile/edit" element={<EditUser />} />

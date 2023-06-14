@@ -9,7 +9,7 @@ UserModel = get_user_model()
 class TasksListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tasks
-        fields = ('title', 'description', 'priority', 'id')
+        fields = ('title', 'description', 'priority', 'id', 'date_created')
 
 
 class TasksDetailsSerializer(serializers.ModelSerializer):
